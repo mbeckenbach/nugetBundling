@@ -34,3 +34,15 @@ bundles.Add(nugetBundling.JSBundle.Create("JQuery", "//ajax.googleapis.com/ajax/
 ```
 8. Test
 Simply change the cdn url to something that wont work or disconnect your internet connection. Then run your application. The script library should get loaded from your local file. Reconnect the internet / undo your change to a wrong cdn path and the script will be loaded from a cdn. (Have a look at F12 tools network tab.)
+
+##Get a list of all installed nuget packages
+nugetBundling includes helper class es that read your installed nuget packages.config and converts them into a nice list object.
+
+Simply create a new packageReader like this and use it the way you like:
+```C#
+NugetReader reader = new NugetReader(HttpContext.Current.Server.MapPath("~/"));
+List<NugetPackage> installedPackages = reader.NugetPackages;
+NugetPackage jquery = installedPackages.SingleOrDefault(x => x.Id == "jQuery");
+string jqueryVersion = jquery.Version;
+
+```
