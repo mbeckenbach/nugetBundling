@@ -3,7 +3,7 @@ nugetBundling
 
 Creates JavaScript bundles using CDNs depending on the installed nuget package version with local fallback.
 
-I've added a list of packages that i use with this to the wiki. Please feel free to add your packages / cdn paths and fallback expressions there, so that the list can grow. https://github.com/mbeckenbach/nugetBundling/wiki
+I've added a list of packages that i use with this to the wiki. Please feel free to submit your packages / cdn paths and fallback expressions there, so that the list can grow. https://github.com/mbeckenbach/nugetBundling/wiki
 
 ##Install via Nuget
 ```PowerShell
