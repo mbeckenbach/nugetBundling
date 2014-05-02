@@ -59,7 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bundle.cs" />
+    <Compile Include="JSBundle.cs" />
     <Compile Include="Helper\NugetReader.cs" />
     <Compile Include="Models\NugetPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
